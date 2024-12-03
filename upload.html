@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Picture</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        input[type="file"], button {
+            margin: 10px;
+            padding: 10px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Upload Your Picture</h1>
+    <p>Please take or upload a picture and click submit.</p>
+
+    <div class="container">
+        <input type="file" accept="image/*" capture="user">
+        <button onclick="submitForm()">Submit</button>
+    </div>
+
+    <script>
+        function submitForm() {
+            alert("Picture submitted successfully!");
+            // Redirect to a confirmation or home page after submission (optional)
+            window.location.href = "thankyou.html"; // Replace with your actual thank-you page
+        }
+    </script>
+</body>
+</html>
